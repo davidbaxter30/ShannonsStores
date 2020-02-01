@@ -1,0 +1,31 @@
+{
+  "npmScope": "shannons-shops",
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "projects": {
+    "ddshop": {
+      "tags": ["ui"]
+    },
+    "ddshop-e2e": {
+      "tags": [],
+      "implicitDependencies": ["ddshop"]
+    },
+    "api": {
+      "tags": []
+    },
+    "api-interfaces": {
+      "tags": ["api", "ui"]
+    },
+    "models": {
+      "tags": []
+    }
+  }
+}
