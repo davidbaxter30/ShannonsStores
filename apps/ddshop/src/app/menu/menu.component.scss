@@ -1,0 +1,34 @@
+:host {
+  padding: 20px;
+  display: block;
+
+  nav {
+    display: grid;
+    grid-template-columns: 200px auto;
+    grid-template-rows: auto;
+    grid-template-areas: 'title links';
+
+    background: transparentize($color: #000000, $amount: .9);
+    border-radius: 5px;
+    line-height: 36px;
+    padding: 10px;
+
+    .siteTitle {
+      grid-area: title;
+      
+      font-size: xx-large;
+    }
+  
+    .navLinks {
+      grid-area: links;
+      padding: 0;
+      margin: 0;
+      display: flex;
+  
+      li {
+        display: block;
+        margin: 0 0 0 20px;
+      }
+    }
+  }
+}

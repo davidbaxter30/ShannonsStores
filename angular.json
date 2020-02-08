@@ -22,7 +22,7 @@
             "tsConfig": "apps/ddshop/tsconfig.app.json",
             "aot": false,
             "assets": ["apps/ddshop/src/favicon.ico", "apps/ddshop/src/assets"],
-            "styles": ["apps/ddshop/src/styles.scss"],
+            "styles": ["apps/ddshop/src/stylesheets/main.scss"],
             "scripts": []
           },
           "configurations": {

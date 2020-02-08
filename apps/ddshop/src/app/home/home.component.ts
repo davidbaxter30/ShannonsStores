@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { Message } from '@angular/compiler/src/i18n/i18n_ast';
 import { HttpClient } from '@angular/common/http';
+import { Message } from '@shannons-shops/api-interfaces';
 import { environment } from '../../environments/environment';
 
 @Component({
