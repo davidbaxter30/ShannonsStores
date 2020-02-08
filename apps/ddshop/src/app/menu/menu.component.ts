@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from '../../environments/environment';
 
 @Component({
   selector: 'shannons-shops-menu',
@@ -6,8 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  title: string;
 
-  constructor() { }
+  constructor() {
+    this.title = environment.storeName;
+  }
 
   ngOnInit() {
   }
