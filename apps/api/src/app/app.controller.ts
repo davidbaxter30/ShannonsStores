@@ -1,6 +1,6 @@
 import { Controller, Get } from '@nestjs/common';
 
-import { Message } from '@shannons-shops/api-interfaces';
+import { Message, Product } from '@shannons-shops/api-interfaces';
 
 import { AppService } from './app.service';
 
@@ -11,5 +11,10 @@ export class AppController {
   @Get('hello')
   getData(): Message {
     return this.appService.getData();
+  }
+
+  @Get('Products')
+  getProducts(): Promise<Product[]> {
+    return this.appService.getProducts();
   }
 }

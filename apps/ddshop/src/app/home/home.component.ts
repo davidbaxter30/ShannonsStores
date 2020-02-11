@@ -1,6 +1,4 @@
-import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { Message } from '@shannons-shops/api-interfaces';
+import { Component } from '@angular/core';
 import { environment } from '../../environments/environment';
 
 @Component({
@@ -9,9 +7,9 @@ import { environment } from '../../environments/environment';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent {
-  hello$ = this.http.get<Message>('/api/hello');
   siteTitle: string;
-  constructor(private http: HttpClient) {
+
+  constructor() {
     this.siteTitle = environment.storeName;
   }
 }

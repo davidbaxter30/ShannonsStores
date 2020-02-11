@@ -8,13 +8,17 @@ import { MenuComponent } from './menu/menu.component';
 import { appRoutes } from './routes';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { ProductsListItemComponent } from './products-list-item/products-list-item.component';
+import { ProductsPageComponent } from './products-page/products-page.component';
+import { environment } from '../environments/environment';
 
 @NgModule({
-  declarations: [AppComponent, MenuComponent, HomeComponent, PageNotFoundComponent],
+  declarations: [AppComponent, MenuComponent, HomeComponent, PageNotFoundComponent, ProductListComponent, ProductsListItemComponent, ProductsPageComponent],
   imports: [BrowserModule, HttpClientModule,
     RouterModule.forRoot(
       appRoutes,
-      { enableTracing: true } // <-- debugging purposes only
+      { enableTracing: !environment.production } // <-- debugging purposes only
     )
   ],
   providers: [],
