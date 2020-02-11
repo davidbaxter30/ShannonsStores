@@ -21,7 +21,7 @@ export class AppService {
     });
     const query = '*[_type=="product"] | order(title asc)';
 
-    const result = await sanity.fetch(query)
+    return await sanity.fetch(query)
       .then(results => {
         const products = results.map(product => {
           const output = {
@@ -30,10 +30,7 @@ export class AppService {
             price: product.defaultProductVariant.price,
             description: product.blurb ? product.blurb.en : '',
             body: blocksToHtml({
-              blocks: product.body.en,
-              serializers: {
-                marks: product.body.en
-              }
+              blocks: product.body.en
             }),
             image: ''
           }
@@ -51,7 +48,5 @@ export class AppService {
 
         return products;
       });
-
-    return result;
   }
 }
