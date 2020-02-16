@@ -2,6 +2,8 @@
 FROM node:10
 
 RUN npm install -g nodemon
+RUN npm install --production
+RUN npm run build:api
 
 ADD package.json /tmp/package.json
 ADD package-lock.json /tmp/package-lock.json
