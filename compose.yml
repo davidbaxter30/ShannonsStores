@@ -1,0 +1,10 @@
+version: '3'
+services:
+  api:
+    image: api
+    ports:
+      - 4001:4001
+  ddshop:
+    image: ddshop
+    ports:
+      - 80:80

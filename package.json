@@ -7,10 +7,9 @@
     "nx": "nx",
     "start": "ng serve",
     "build": "ng build",
-    "build:all": "run-s build:api build:ddshop build:docker",
+    "build:all": "run-s build:api build:ddshop",
     "build:api": "ng build api --prod",
     "build:ddshop": "ng build ddshop --prod",
-    "build:docker": "run-s docker:build-api docker:build-ddshop",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
@@ -28,11 +27,7 @@
     "update": "ng update @nrwl/workspace",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help",
-    "docker:build-api": "docker image build -t ddshop-api -f api.Dockerfile .",
-    "docker:build-ddshop": "docker image build -t ddshop -f ddshop.Dockerfile .",
-    "docker:up": "docker-compose up -d",
-    "docker:down": "docker-compose down"
+    "help": "nx help"
   },
   "private": true,
   "dependencies": {
