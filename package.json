@@ -10,6 +10,10 @@
     "build:all": "run-s build:api build:ddshop",
     "build:api": "ng build api --prod",
     "build:ddshop": "ng build ddshop --prod",
+    "docker-build:api": "docker build --pull --rm -f \"api.Dockerfile\" -t api:latest \".\"",
+    "docker-build:ddshop": "docker build --pull --rm -f \"ddshop.Dockerfile\" -t ddshop:latest \".\"",
+    "docker-build": "npm run docker-build:api && npm run docker-build:ddshop",
+    "docker-compose": "docker-compose up -d",
     "test": "ng test",
     "lint": "nx workspace-lint && ng lint",
     "e2e": "ng e2e",
@@ -53,7 +57,7 @@
     "zone.js": "^0.9.1"
   },
   "devDependencies": {
-    "@angular-devkit/build-angular": "^0.803.23",
+    "@angular-devkit/build-angular": "^0.803.26",
     "@angular/cli": "8.3.14",
     "@angular/compiler-cli": "^8.2.0",
     "@angular/language-service": "^8.2.0",

@@ -3,7 +3,7 @@ services:
   api:
     image: api
     ports:
-      - 4001:4001
+      - 3333:3333
   ddshop:
     image: ddshop
     ports:

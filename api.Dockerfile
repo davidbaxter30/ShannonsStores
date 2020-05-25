@@ -1,4 +1,4 @@
-FROM node:10
+FROM node:latest
 
 RUN npm install -g nodemon
 
@@ -10,6 +10,6 @@ RUN mkdir -p /app/api && cp -a /tmp/node_modules /app/api/
 WORKDIR /app/api
 COPY dist/apps/api/ /app/api
 
-EXPOSE 4001
+EXPOSE 3333
 
 CMD [ "nodemon", "main.js" ]
