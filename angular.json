@@ -20,7 +20,7 @@
             "main": "apps/ddshop/src/main.ts",
             "polyfills": "apps/ddshop/src/polyfills.ts",
             "tsConfig": "apps/ddshop/tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": ["apps/ddshop/src/favicon.ico", "apps/ddshop/src/assets"],
             "styles": ["apps/ddshop/src/stylesheets/main.scss"],
             "scripts": []
@@ -38,7 +38,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
