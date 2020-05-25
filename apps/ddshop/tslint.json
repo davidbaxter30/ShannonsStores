@@ -3,5 +3,8 @@
   "rules": {
     "directive-selector": [true, "attribute", "shannonsShops", "camelCase"],
     "component-selector": [true, "element", "shannons-shops", "kebab-case"]
+  },
+  "linterOptions": {
+    "exclude": ["!**/*"]
   }
 }
