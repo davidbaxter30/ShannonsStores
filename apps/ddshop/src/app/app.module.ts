@@ -11,7 +11,7 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { ProductListComponent } from './product-list/product-list.component';
 import { ProductsListItemComponent } from './products-list-item/products-list-item.component';
 import { ProductsPageComponent } from './products-page/products-page.component';
-import { environment } from '../environments/environment';
+import { environment } from '@environment/ddshop';
 
 @NgModule({
   declarations: [AppComponent, MenuComponent, HomeComponent, PageNotFoundComponent, ProductListComponent, ProductsListItemComponent, ProductsPageComponent],

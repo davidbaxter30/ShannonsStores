@@ -1,5 +1,5 @@
 export const environment = {
   production: true,
-  apiUrl: 'http://localhost:3333/api',
+  apiUrl: 'http://localhost:4001/api',
   storeName: 'ShanHub'
 };

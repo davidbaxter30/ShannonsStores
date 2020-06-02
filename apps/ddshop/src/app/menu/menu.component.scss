@@ -14,18 +14,6 @@
     padding: 10px;
     color: white;
 
-    &::before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: -25%;
-      width: 150%;
-      height: 500%;
-      background-color: cc(bg, alt);
-      box-shadow: 0 0.1rem 0.75rem cc(shadow, 0.33);
-      z-index: -1;
-    }
-
     .siteTitle {
       grid-area: title;
 

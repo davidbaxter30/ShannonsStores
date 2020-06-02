@@ -10,6 +10,7 @@ RUN mkdir -p /app/api && cp -a /tmp/node_modules /app/api/
 WORKDIR /app/api
 COPY dist/apps/api/ /app/api
 
-EXPOSE 3333
+EXPOSE 4001
 
+ENV port=4001
 CMD [ "nodemon", "main.js" ]
