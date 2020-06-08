@@ -2,7 +2,8 @@
 
 :host {
   .background {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://i.picsum.photos/id/156/1800/1200.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+      url('https://i.picsum.photos/id/156/1800/1200.jpg');
 
     height: 100vh;
 
@@ -18,61 +19,20 @@
       left: 50%;
       transform: translate(-50%, -50%);
       color: white;
-    }
 
-    .button {
-      font-family: 'Work Sans', sans-serif;
-      touch-callout: none;
-      user-select: none;
-      display: inline-block;
-      border: .2em solid;
-      position: relative;
-      cursor: pointer;
-      overflow: hidden;
-      opacity: 0.6;
-      color: #FFF;
-      &__text {
-        display: block;
-        padding: 1em 2em;
-        text-transform: uppercase;
-        font-weight: bold;
-        &:before{
-          content: attr(title);
-        }
-        &--bis {
-          display: block;
-          position: absolute;
-          top: 0; left:0; right: 0; bottom: 0;
-          transform: translateX(-1 * $anim-text-offset);
-          opacity: 0;
-        }
-      }
-      &__mask {
-        display: block;
-        position: absolute;
-        top: 0; left: 0; right: 0; bottom: 0;
-        background: white;
-        transform: translateX(-100%) rotate(45deg);
-        transition: all 0.3s;
-      }
-      
-      &:hover {
-        opacity: 1;
-        .button__text{
-          animation: fx-text .3s ease-out;
-          &--bis{
-            animation: fx-text-bis .3s ease-out;
-          }
-        }    
-        .button__mask {
-          animation: fx-mask .3s ease-out;
-        }    
+      h1 {
+        font-size: xx-large;
       }
 
-      &:active {
-        opacity: 1;
-        background: white;
-        color: inherit;
+      .goToStore {
+        display: flex;
+
+        aside {
+          font-size: large;
+          line-height: 40px;
+          text-align: center;
+          vertical-align: middle;
+        }
       }
     }
   }

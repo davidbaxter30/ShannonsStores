@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ProductsPageComponent } from './products-page.component';
+import { Component } from '@angular/core';
+
+@Component({selector: 'shannons-shops-product-list', template: ''})
+class ProductListStubComponent {}
 
 describe('ProductsPageComponent', () => {
   let component: ProductsPageComponent;
@@ -8,7 +12,7 @@ describe('ProductsPageComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ ProductsPageComponent ]
+      declarations: [ ProductsPageComponent, ProductListStubComponent ]
     })
     .compileComponents();
   }));

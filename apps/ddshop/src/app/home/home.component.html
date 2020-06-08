@@ -1,13 +1,13 @@
-
 <div class="background">
-  <shannons-shops-menu></shannons-shops-menu>
   <div class="text">
     <h1>Welcome to {{siteTitle}}!</h1>
-
-    <div class="button" [routerLink]="'/products'">
-      <span class="button__mask"></span>
-      <span class="button__text">Check out Products</span>
-      <span class="button__text button__text--bis">Check out Products</span>
+    <div class="goToStore">
+      <aside>
+        Shop Products
+      </aside>
+      <button mat-icon-button>
+        <mat-icon>arrow_forward</mat-icon>
+      </button>
     </div>
   </div>
 </div>

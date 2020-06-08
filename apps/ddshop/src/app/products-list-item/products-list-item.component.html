@@ -3,7 +3,7 @@
 
   <figcaption>
     <h3 class="product__name">{{ product.name }} <span class="product__price">{{ product.price }}$</span></h3>
-    <button class="button button--buy snipcart-add-item"
+    <button mat-raised-button color="primary" class="snipcart-add-item"
       [attr.data-item-url]=""
       [attr.data-item-id]="product.id"
       [attr.data-item-price]="product.price"

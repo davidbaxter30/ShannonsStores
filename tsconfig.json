@@ -18,8 +18,8 @@
     "paths": {
       "@shannons-shops/api-interfaces": ["libs/api-interfaces/src/index.ts"],
       "@shannons-shops/models": ["libs/models/src/index.ts"],
-      "@environment/ddshop": ["apps/ddshop/src/environments/environment"],
-      "@environment/api": ["apps/api/src/environments/environment"]
+      "@ddshop/environment": ["apps/ddshop/src/environments/environment"],
+      "@api/environment": ["apps/api/src/environments/environment"]
     }
   },
   "exclude": ["node_modules", "tmp"]

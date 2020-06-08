@@ -21,8 +21,14 @@
             "polyfills": "apps/ddshop/src/polyfills.ts",
             "tsConfig": "apps/ddshop/tsconfig.app.json",
             "aot": true,
-            "assets": ["apps/ddshop/src/favicon.ico", "apps/ddshop/src/assets"],
-            "styles": ["apps/ddshop/src/stylesheets/main.scss"],
+            "assets": [
+              "apps/ddshop/src/favicon.ico",
+              "apps/ddshop/src/assets"
+            ],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "apps/ddshop/src/stylesheets/main.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -81,7 +87,10 @@
               "apps/ddshop/tsconfig.app.json",
               "apps/ddshop/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/ddshop/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ddshop/**"
+            ]
           }
         },
         "test": {
@@ -116,8 +125,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/ddshop-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/ddshop-e2e/**"]
+            "tsConfig": [
+              "apps/ddshop-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/ddshop-e2e/**"
+            ]
           }
         }
       }
@@ -135,7 +149,9 @@
             "outputPath": "dist/apps/api",
             "main": "apps/api/src/main.ts",
             "tsConfig": "apps/api/tsconfig.app.json",
-            "assets": ["apps/api/src/assets"],
+            "assets": [
+              "apps/api/src/assets"
+            ],
             "buildLibsFromSource": true
           },
           "configurations": {
@@ -165,7 +181,10 @@
               "apps/api/tsconfig.app.json",
               "apps/api/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/api/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/api/**"
+            ]
           }
         },
         "test": {
@@ -191,7 +210,10 @@
               "libs/api-interfaces/tsconfig.lib.json",
               "libs/api-interfaces/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/api-interfaces/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/api-interfaces/**"
+            ]
           }
         },
         "test": {
@@ -217,7 +239,10 @@
               "libs/models/tsconfig.lib.json",
               "libs/models/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!libs/models/**"]
+            "exclude": [
+              "**/node_modules/**",
+              "!libs/models/**"
+            ]
           }
         },
         "test": {

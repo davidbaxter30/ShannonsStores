@@ -1,15 +1,18 @@
 <nav>
-  <div class="siteTitle">
+  <div class="siteTitle" [routerLink]="'/'">
     <span>{{title}}</span>
   </div>
 
   <ul class="navLinks">
-    <li [routerLink]="'/'">Home</li>
-    <li [routerLink]="'/products'">Products</li>
+    <li matRipple [routerLink]="'/'" [routerLinkActive]="'active'" [routerLinkActiveOptions]="{exact:
+      true}">Home</li>
+    <li matRipple [routerLink]="'/products'" [routerLinkActive]="'active'">Products</li>
   </ul>
 
-  <button class="snipcart-checkout">
-    View cart
-  </button>
+  <div class="cartButton">
+    <button mat-stroked-button class="snipcart-checkout">
+      View cart
+    </button>
+  </div>
 
 </nav>
